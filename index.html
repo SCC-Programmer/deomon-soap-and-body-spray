@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEOMON</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="design.css">
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
+  /* Adjust sidebar for phone users */
+  .w3-sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  /* Adjust line width for phone users */
+  hr.style1 {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center ">
+  <!-- Avatar image in top left corner -->
+  <img src="img/deomonlogolegit.PNG" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black ">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PRODUCTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#products" class="w3-bar-item w3-button" style="width:25% !important">PRODUCTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">DEOMON</h1>
+    <p>ELITE ESSENCE</p>
+    <img src="img/deomon_frontpage.PNG" alt="deomon_frontpage" class="w3-image" width="10000" height="250">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey  w3-center ">ABOUT US</h2>
+    <hr class="style1 w3-opacity">
+    <p>DEOMON is where nature meets innovation to bring you a refreshing twist in personal care. Rooted in the lush landscapes of Southeast Asia, we pride ourselves on being a pioneer in crafting exceptional deodorant sprays and soaps derived from the exotic Dillenia Philippinensis.
+    </p>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey w3-center">KATMON</h2>
+    <hr class="style1 w3-opacity">
+    <p>Dillenia Philippinensis (katmon) is endemic to the Philippines and can be used for urban greening. Its fruit is known as elephant apple. Katmon grows in low to medium altitude forests throughout the Philippines, but does not survive the cold climates of the uplands.
+    </p>
+    
+<!-- Add a modal -->
+<div id="ingredientsModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-grey w3-center">
+      <span onclick="document.getElementById('ingredientsModal').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-text-black">INGREDIENTS</h2>
+    </header>
+    <div class="w3-container w3-text-black">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-padding">
+          <h3><b>DEO SPRAY</b></h3>
+          <ul>
+            <li>Mineral Oil</li>
+            <li>Distilled Water</li>
+            <li>Fragrance</li>
+            <li>Aloe Gel</li>
+            <li>Extract</li>
+          </ul>
+        </div>
+        <div class="w3-half w3-padding">
+          <h3><b>DEOMON SOAP</b></h3>
+          <ul>
+            <li>Glycerine Soap Base</li>
+            <li>Coconut Oil</li>
+            <li>Colorants</li>
+            <li>Coco Glucoside</li>
+            <li>Catmon Freeze Dried Powder</li>
+            <li>Fragrance oil</li>
+          </ul>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-padding">
+          <img src="img/DEOMON\DEOSPRAY.PNG" style="width:100%">
+        </div>
+        <div class="w3-half w3-padding">
+          <img src="img/DEOMON\SAMPLESOAP.PNG" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <footer class="w3-container w3-light-grey w3-center">
+      <button onclick="document.getElementById('ingredientsModal').style.display='none'" class="w3-button w3-light-grey w3-padding-large">Close</button>
+    </footer>
+  </div>
+</div>
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64 " id="about">
+  <h2 class="w3-text-light-grey w3-center">INGREDIENTS</h2>
+  <hr class="style1 w3-opacity">
+  
+  <div class="w3-center"> <!-- Center the button -->
+  <button onclick="document.getElementById('ingredientsModal').style.display='block'" class="w3-button w3-light-grey w3-padding-large w3-section">
+    <i class="fa fa-download"></i> View INGREDIENTS
+  </button>
+</div><br>
+
+
+<!-- Modal for product details -->
+<div id="productModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-grey w3-center">
+      <span onclick="closeModal()" class="w3-button w3-large w3-display-topright">&times;</span>
+      <h2 class="w3-text-black">Product Details</h2>
+    </header>
+   <div class="w3-container w3-text-black w3-center">
+  <p id="productName"></p>
+  <p id="productPrice"></p>
+  <input type="number" id="quantity" placeholder="Quantity" min="1" max="50" onchange="calculateTotal()" style="width: 150px;">
+  <p id="totalPrice"></p>
+  <div style="margin-top: 10px;">
+    <input type="text" id="name" placeholder="Name" style="display: block; margin: 0 auto; margin-bottom: 10px; width: 200px;">
+    <input type="text" id="address" placeholder="Address" style="display: block; margin: 0 auto; margin-bottom: 10px; width: 200px;">
+    <input type="tel" id="contactNumber" placeholder="Contact Number" onkeypress="return event.charCode >= 48 && event.charCode <= 57" style="display: block; margin: 0 auto; margin-bottom: 10px; width: 200px;">
+  </div>
+</div>
+
+    <footer class="w3-container w3-light-grey w3-center">
+      <button onclick="confirmPurchase()" class="w3-button w3-light-grey w3-padding-large">Confirm Purchase</button>
+    </footer>
+  </div>
+</div>
+
+<!-- Grid for pricing tables -->
+<h2 class="w3-padding-16 w3-center w3-text-light-grey">PRICES</h2>
+<hr class="style1 w3-opacity">
+<div class="w3-row-padding" style="margin:0 -16px">
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-dark-grey w3-xlarge w3-padding-90">DEO SPRAY</li>
+      <li class="w3-padding-16">Dries quickly</li>
+      <li class="w3-padding-16">It leaves no stain</li>
+      <li class="w3-padding-16">Prevents bad odor</li>
+      <li class="w3-padding-16">Prevents sweating</li>
+      <li class="w3-padding-16">Provides cooling effect</li>
+      <li class="w3-padding-16">
+        <h2>₱89</h2>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <input type="radio" name="productType" value="DEO SPRAY"> Select
+      </li>
+    </ul>
+  </div>
+  
+  <div class="w3-half">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-dark-grey w3-xlarge w3-padding-90">DEOMON SOAP</li>
+      <li class="w3-padding-16">Leaves good smell on your skin</li>
+      <li class="w3-padding-16">Doesn't melt easily</li>
+      <li class="w3-padding-16">Soft use to skin</li>
+      <li class="w3-padding-16">Gentle on skin</li>
+      <li class="w3-padding-16">Moisturizing skin</li>
+      <li class="w3-padding-16">
+        <h2>₱49</h2>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <input type="radio" name="productType" value="DEOMON SOAP"> Select
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal Purchase Button -->
+<div class="w3-center">
+  <button onclick="openModal()" class="w3-button w3-grey w3-padding-large w3-section w3-hover-light-gr">BUY NOW</button>
+</div>
+
+
+
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="products">
+    <h2 class="w3-text-light-grey  w3-center">PRODUCTS</h2>
+    <hr class="style1 w3-opacity">
+
+    <!-- Grid for Product photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="img/DEOMON\SAMPLESOAP.PNG" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="img/DEOMON\DEOSPRAY.PNG"style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Product Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey w3-center">Contact Us</h2>
+    <hr class="style1 w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Manila, Philippines </p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 09813776899 </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href="mailto:deomon@gmail.com">deomon@gmail.com</a> </p>
+  </div><br>
+  
+    <p>Let's get in touch. Send us a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <!-- Modify the form button to call a JavaScript function -->
+<button class="w3-button w3-light-grey w3-padding-large" type="button" onclick="validateForm()"> <!-- Change type to "button" -->
+  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+</button>
+
+
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+    <h4 class="w3-padding-5  w3-center w3-text-light-grey"> VISIT US ON FACEBOOK <i class="fa fa-hand-o-down"></i></h4>
+    <a href="https://www.facebook.com/profile.php?id=61555940321033" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    </a>
+  
+
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Additional CSS for existing HTML */
+body {
+    line-height: 1.6;
+}
+
+/* Sidebar styling */
+.w3-sidebar img {
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.w3-sidebar a {
+    display: block;
+    padding: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.w3-sidebar a:hover {
+    background-color: #555;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 12px;
+}
+
+/* About Section styling */
+#about {
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+/* Product Section styling */
+#products {
+    text-align: center;
+}
+
+/* Pricing tables styling */
+.w3-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.w3-ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+}
+
+.w3-ul li:last-child {
+    border-bottom: none;
+}
+
+.w3-ul h2 {
+    margin-top: 0;
+}
+
+/* Contact Section styling */
+#contact {
+    text-align: center;
+}
+
+/* Form styling */
+.w3-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* Responsive image styling */
+.w3-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Button styling */
+.w3-button {
+    display: inline-block;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for small screens */
+@media only screen and (max-width: 600px) {
+    .w3-sidebar img {
+        max-width: 80%;
+    }
+}
+
+/* PROMO */
+body {
+    line-height: 1.6;
+}
+
+/* Sidebar styling */
+.w3-sidebar img {
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.w3-sidebar a {
+    display: block;
+    padding: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.w3-sidebar a:hover {
+    background-color: #555;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom:5px;
+}
+
+/* About Section styling */
+#about {
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+/* Product Section styling */
+#products {
+    text-align: center;
+}
+
+/* Pricing tables styling */
+.w3-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.w3-ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+}
+
+.w3-ul li:last-child {
+    border-bottom: none;
+}
+
+.w3-ul h2 {
+    margin-top: 0;
+}
+
+/* Contact Section styling */
+#contact {
+    text-align: center;
+}
+
+/* Form styling */
+.w3-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* Responsive image styling */
+.w3-image {
+    display: block;
+    margin: 0 auto;
+}
+
+
+  
