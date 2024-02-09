@@ -44,21 +44,41 @@ let productPrice = 0; // Initializing productPrice variable outside the function
       }
   }
 
-// To validate the form and show the alert -->
+  function validateForm() {
+    // Get the values of the form inputs
+    var name = document.getElementsByName("Name")[0].value;
+    var email = document.getElementsByName("Email")[0].value;
+    var subject = document.getElementsByName("Subject")[0].value;
+    var message = document.getElementsByName("Message")[0].value;
 
-function validateForm() {
-  // Get the values of the form inputs
-  var name = document.getElementsByName("Name")[0].value;
-  var email = document.getElementsByName("Email")[0].value;
-  var subject = document.getElementsByName("Subject")[0].value;
-  var message = document.getElementsByName("Message")[0].value;
+    // Check if all fields are filled
+    if (name && email && subject && message) {
+        // Check if the email address ends with an allowed domain
+        var allowedDomains = ["@gmail.com", "@outlook.com", "@yahoo.com", "@icloud.com", "@aol.com", "@zoho.com"];
+        var isValidDomain = allowedDomains.some(function(domain) {
+            return email.endsWith(domain);
+        });
 
-  // Check if all fields are filled
-  if (name && email && subject && message) {
-    // If all fields are filled, show the thank you alert
-    alert("THANK YOU! WE WILL REVIEW YOUR MESSAGE IMMEDIATELY");
-  } else {
-    // If any field is empty, show an alert to fill all fields
-    alert("Please fill in all fields before sending your message.");
-  }
+        if (isValidDomain) {
+            // If all fields are filled and email has a valid domain, show the thank you alert
+            alert("THANK YOU! WE WILL REVIEW YOUR MESSAGE IMMEDIATELY");
+            resetForm(); // Reset the form fields
+        } else {
+            // If email does not have a valid domain, show an alert
+            alert("PLEASE USE A VALID EMAIL (Gmail, Outlook, Yahoo, iCloud, AOL, or Zoho)");
+        }
+    } else {
+        // If any field is empty, show an alert to fill all fields
+        alert("PLEASE FILL IN ALL FIELDS BEFORE SENDING YOUR MESSAGE \nTHANK YOU ");
+    }
 }
+
+function resetForm() {
+    // Reset all form fields
+    document.getElementsByName("Name")[0].value = "";
+    document.getElementsByName("Email")[0].value = "";
+    document.getElementsByName("Subject")[0].value = "";
+    document.getElementsByName("Message")[0].value = "";
+}
+
+
