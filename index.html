@@ -87,7 +87,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </header>
 
 
-  <!-- About Section -->
+<!-- Auto adjust the about section based on screen size -->
+<style>
+  /* Add custom styles for smaller screens */
+  @media only screen and (max-width: 600px) {
+    /* Adjust letter-spacing for smaller screens */
+    .w3-text-light-grey {
+      letter-spacing: 1px; /* You can adjust the value as needed */
+    }
+  }
+</style>
+
+<!-- About Section -->
 <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
   <h2 class="w3-text-light-grey w3-center">ABOUT US</h2>
   <hr class="style1 w3-opacity">
@@ -99,6 +110,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <hr class="style1 w3-opacity">
   <p>Dillenia Philippinensis (katmon) is endemic to the Philippines and can be used for urban greening. Its fruit is known as elephant apple. Katmon grows in low to medium altitude forests throughout the Philippines, but does not survive the cold climates of the uplands.</p>
 </div>
+
 
     
 <!-- Add a modal -->
