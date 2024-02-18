@@ -54,7 +54,7 @@ let productPrice = 0; // Initializing productPrice variable outside the function
     // Check if all fields are filled
     if (name && email && subject && message) {
         // Check if the email address ends with an allowed domain
-        var allowedDomains = ["@gmail.com", "@outlook.com", "@yahoo.com", "@icloud.com", "@aol.com", "@zoho.com"];
+        var allowedDomains = ["@gmail.com", "@outlook.com", "@yahoo.com", "@icloud.com"];
         var isValidDomain = allowedDomains.some(function(domain) {
             return email.endsWith(domain);
         });
@@ -65,11 +65,11 @@ let productPrice = 0; // Initializing productPrice variable outside the function
             resetForm(); // Reset the form fields
         } else {
             // If email does not have a valid domain, show an alert
-            alert("PLEASE USE A VALID EMAIL (Gmail, Outlook, Yahoo, iCloud, AOL, or Zoho)");
+            alert("PLEASE USE A VALID EMAIL! (Gmail, Outlook, Yahoo, iCloud)");
         }
     } else {
         // If any field is empty, show an alert to fill all fields
-        alert("PLEASE FILL IN ALL FIELDS BEFORE SENDING YOUR MESSAGE \nTHANK YOU ");
+        alert("PLEASE FILL IN ALL FIELDS BEFORE SENDING YOUR MESSAGE. THANK YOU! ");
     }
 }
 
